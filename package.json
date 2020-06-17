@@ -1,0 +1,27 @@
+{
+  "name": "serverless-apigateway-eventbridge-proxy",
+  "version": "v0.0.1",
+  "description": "This Serverless Framewrok plugin supports the AWS EventBridge proxy integration feature of API Gateway.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest --env node",
+    "test:watch": "jest --env node --watch"
+  },
+  "author": {
+    "name": "Carlos Rojas",
+    "email": "rl.carlos@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "jsonschema": "^1.2.6",
+    "lodash": "^4.17.15"
+  },
+  "homepage": "https://github.com/c4e/serverless-apigateway-eventbridge-proxy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c4e/serverless-apigateway-eventbridge-proxy.git"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
+}

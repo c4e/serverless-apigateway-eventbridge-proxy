@@ -1,0 +1,86 @@
+{
+  "id": "apiGatewayEventbridgeProxies",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "path": {
+        "type": "string"
+      },
+      "method": {
+        "type": "string"
+      },
+      "source": {
+        "type": ["object", "string"],
+        "properties": {
+          "pathParam": {
+            "type": "string"
+          },
+          "queryStringParam": {
+            "type": "string"
+          },
+          "bodyParam": {
+            "type": "string"
+          }
+        },
+        "anyOf": [
+          {"required" : ["pathParam"]},
+          {"required" : ["queryStringParam"]},
+          {"required" : ["bodyParam"]}
+        ]
+      },
+      "detailType": {
+        "type": ["object", "string"],
+        "properties": {
+          "pathParam": {
+            "type": "string"
+          },
+          "queryStringParam": {
+            "type": "string"
+          },
+          "bodyParam": {
+            "type": "string"
+          }
+        },
+        "anyOf": [
+          {"required" : ["pathParam"]},
+          {"required" : ["queryStringParam"]},
+          {"required" : ["bodyParam"]}
+        ]
+      },
+      "detail": {
+        "type": ["object", "string"],
+        "properties": {
+          "pathParam": {
+            "type": "string"
+          },
+          "queryStringParam": {
+            "type": "string"
+          },
+          "bodyParam": {
+            "type": "string"
+          }
+        },
+        "anyOf": [
+          {"required" : ["pathParam"]},
+          {"required" : ["queryStringParam"]},
+          {"required" : ["bodyParam"]}
+        ]
+      },
+      "eventBusName": {
+        "type": ["object", "string"],
+        "properties": {
+          "Ref": {
+            "type": "string"
+          }
+        },
+        "required": ["Ref"]
+      },
+      "cors": {
+        "type": "boolean"
+      }
+    },
+    "required": ["path", "method", "source", "eventBusName"]
+  }
+
+}
