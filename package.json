@@ -14,7 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "jsonschema": "^1.2.6",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "serverless": "^1.73.1"
   },
   "homepage": "https://github.com/c4e/serverless-apigateway-eventbridge-proxy",
   "repository": {
